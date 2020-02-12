@@ -26,3 +26,9 @@ docker images erraticmotion:hello
 - Removes all containers.
 docker rm $(docker ps -a -q)
 ```
+
+## Lisp
+
+```console
+sbcl --script hello.lsp
+```

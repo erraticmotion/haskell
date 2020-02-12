@@ -24,6 +24,19 @@ echo ":set prompt \"ghci> \"" > .ghci
 chmod go-w .ghci
 ```
 
+## Install Lisp
+
+```console
+sudo apt-get install -y sbcl
+
+curl -o /tmp/ql.lisp http://beta.quicklisp.org/quicklisp.lisp
+
+sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
+       --eval '(quicklisp-quickstart:install :path "~/.quicklisp")' \
+       --eval '(ql:add-to-init-file)' \
+       --quit
+```
+
 ## File Watcher
 
 Visual Studio Code is unable to watch for file changes in this large workspace (error ENOSPC)

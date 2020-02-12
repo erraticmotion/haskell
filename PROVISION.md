@@ -3,7 +3,7 @@
 Installation of Ubuntu 18.04.4 using VMware Workstation 15.
 
 - 8Gb memory
-- 4 CPUs
+- 8 CPUs
 - Enable Virtualization Intel VT -x/EPT
 
 ## Enable SSH access
@@ -41,7 +41,7 @@ sudo nano /etc/fstab
 ```
 
 ```text
-192.168.0.3:/nfs/Haskell/haskell    /home/ubuntu/src   nfs      defaults    0       0
+192.168.0.3:/nfs/Source/haskell    /home/ubuntu/src   nfs      defaults    0       0
 ```
 
 ```console
