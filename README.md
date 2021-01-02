@@ -44,20 +44,6 @@ echo ":set prompt \"ghci> \"" > .ghci
 chmod go-w .ghci
 ```
 
-## File Watcher
-
-Visual Studio Code is unable to watch for file changes in this large workspace (error ENOSPC)
-
-```console
-sudo nano /etc/sysctl.conf
-
--- add at the end of the file
-fs.inotify.max_user_watches=524288
--- save and close
-
-sudo sysctl -p
-```
-
 [haskell]: https://www.haskell.org/
 [stack]: https://tech.fpcomplete.com/haskell/get-started/linux
 [learn]: https://tech.fpcomplete.com/haskell/learn
